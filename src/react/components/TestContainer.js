@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { addNumber } from '../../redux'
 
-function TestContainer(props) {
+function Test(props) {
   const testNumber = useSelector(state => state.number)
   const dispatch = useDispatch()
   return (
@@ -16,4 +16,4 @@ function TestContainer(props) {
   )
 }
 
-export default TestContainer
+export default Test

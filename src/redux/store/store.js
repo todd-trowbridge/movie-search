@@ -2,8 +2,8 @@
 import { createStore } from 'redux'
 
 // import the test reducer
-import testReducer from '../test/testReducer'
+import rootReducer from '../index'
 
-const store = createStore(testReducer)
+const store = createStore(rootReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 export default store
