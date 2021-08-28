@@ -31,7 +31,7 @@ function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = (e) => {
-    let url = "https://www.omdbapi.com/?apikey=59354c85&s=";
+    let url = "www.omdbapi.com/?apikey=59354c85&s=";
     e.preventDefault();
     fetch(encodeURI(url + searchTerm))
       .then((res) => res.json())
