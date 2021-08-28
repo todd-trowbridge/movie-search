@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 300,
-    maxHeight: 300,
     minHeight: 200,
+    maxHeight: 300,
     width: 200,
-    maxWidth: 300,
-    maxHeight: 200
+    minWidth: 200,
+    maxWidth: 300
   }
 }));
 
@@ -31,7 +31,7 @@ function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = (e) => {
-    let url = "http://www.omdbapi.com/?apikey=59354c85&s=";
+    let url = "https://www.omdbapi.com/?apikey=59354c85&s=";
     e.preventDefault();
     fetch(encodeURI(url + searchTerm))
       .then((res) => res.json())
