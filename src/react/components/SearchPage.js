@@ -24,6 +24,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+const key = "d6c12775"
+
 function SearchPage() {
   const classes = useStyles();
   const dispatch = useDispatch();
@@ -31,7 +33,7 @@ function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSubmit = (e) => {
-    let url = "www.omdbapi.com/?apikey=59354c85&s=";
+    let url = `www.omdbapi.com/?apikey=${key}=`;
     e.preventDefault();
     fetch(encodeURI(url + searchTerm))
       .then((res) => res.json())
