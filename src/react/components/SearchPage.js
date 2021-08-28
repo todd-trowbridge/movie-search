@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
   },
   media: {
     height: 300,
-    minHeight: 200,
     maxHeight: 300,
+    minHeight: 200,
     width: 200,
-    minWidth: 200,
-    maxWidth: 300
+    maxWidth: 300,
+    minWidth: 200
   }
 }));
 
