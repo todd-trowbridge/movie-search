@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function FavoritesPage() {
+function Favorites() {
   const dispatch = useDispatch();
   const classes = useStyles();
   const favorites = useSelector((state) => state.favoritesReducer.favorites);
@@ -63,4 +63,4 @@ function FavoritesPage() {
   );
 }
 
-export default FavoritesPage;
+export default Favorites;

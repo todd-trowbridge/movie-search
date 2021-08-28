@@ -4,7 +4,7 @@ import store from "../../redux/store/store";
 import Test from "./TestContainer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import SearchPage from "./SearchPage";
-import FavoritesPage from "./FavoritesPage";
+import Favorites from "./FavoritesPage";
 import Nav from "./Nav";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             <SearchPage />
           </Route>
           <Route exact path="/favorites">
-            <FavoritesPage />
+            <Favorites />
           </Route>
         </Provider>
       </div>

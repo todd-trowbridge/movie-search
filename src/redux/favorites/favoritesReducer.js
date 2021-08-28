@@ -1,5 +1,6 @@
 import { REMOVE_MOVIE, SAVE_MOVIE } from "./favoriteTypes";
 
+// initial empty state
 const initialState = {
   favorites: [],
 };
